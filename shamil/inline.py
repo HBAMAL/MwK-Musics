@@ -31,7 +31,7 @@ buttons = [
                 InlineKeyboardButton('💫 Update Channel💫', url='https://t.me/telsabots'),
                 InlineKeyboardButton('💫 Other Bots💫', url='https://t.me/telsabots/13'),
                 ],[
-                InlineKeyboardButton(' Group ', url='https://t.me/filimsmovie'),       
+                InlineKeyboardButton('💬Group💬 ', url='https://t.me/filimsmovie'),       
     ]
     ]
 
@@ -44,7 +44,7 @@ async def search(client, query):
                     title="Do You Want a help",
                     thumb_url="https://telegra.ph/file/c5ab26ca0919792e78736.jpg",
                     photo_url="https://telegra.ph/file/c5ab26ca0919792e78736.jpg",
-                    caption=(f"{REPLY_MESSAGE}\n\n**Powered By** [ __@Filimsmovie | Alluaddict__ ]"),
+                    caption=(f"{REPLY_MESSAGE}\n\n**Powered By** [ __@Filimsmovie | @Alluaddict__ ]"),
                     reply_markup=InlineKeyboardMarkup(buttons)
                     )
             )
