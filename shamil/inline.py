@@ -26,12 +26,12 @@ from config import Config
 REPLY_MESSAGE=Config.REPLY_MESSAGE
 buttons = [
     [
-        InlineKeyboardButton("❔ How To Use Me ❔", callback_data="help"),
+        InlineKeyboardButton("🆘 HELP🆘", callback_data="help"),
                 ],[
-                InlineKeyboardButton('📢 Updates', url='https://t.me/mwklinks'),
-                InlineKeyboardButton('💬 Support', url='https://t.me/redbullfed')
+                InlineKeyboardButton('💫 Update Channel💫', url='https://t.me/telsabots'),
+                InlineKeyboardButton('💫 Other Bots💫', url='https://t.me/telsabots/13'),
                 ],[
-                InlineKeyboardButton('📜 Source Code 📜', url='https://github.com/shamilhabeebnelli/mwk-musics'),       
+                InlineKeyboardButton(' Group ', url='https://t.me/filimsmovie'),       
     ]
     ]
 
@@ -41,10 +41,10 @@ async def search(client, query):
     if query.query == "KOUTHUKAM_LESHAM_KOODUTHALA":
         answers.append(
             InlineQueryResultPhoto(
-                    title="do you wanna help huh?",
-                    thumb_url="https://telegra.ph/file/a3937c3ddc19bb3300d89.jpg",
-                    photo_url="https://telegra.ph/file/a3937c3ddc19bb3300d89.jpg",
-                    caption=(f"{REPLY_MESSAGE}\n\n**Powered By** [ __@MwKLinks | @RedbullFED__ ]"),
+                    title="Do You Want a help",
+                    thumb_url="https://telegra.ph/file/c5ab26ca0919792e78736.jpg",
+                    photo_url="https://telegra.ph/file/c5ab26ca0919792e78736.jpg",
+                    caption=(f"{REPLY_MESSAGE}\n\n**Powered By** [ __@Filimsmovie | Alluaddict__ ]"),
                     reply_markup=InlineKeyboardMarkup(buttons)
                     )
             )
@@ -63,7 +63,7 @@ async def search(client, query):
             answers.append(
                 InlineQueryResultArticle(
                     title=v["title"],
-                    description=("Duration: {} Views: {}").format(
+                    description=("🕔Duration: {} 👀Views: {}").format(
                         v["duration"],
                         v["viewCount"]["short"]
                     ),
@@ -84,7 +84,7 @@ async def search(client, query):
             await query.answer(
                 results=answers,
                 cache_time=0,
-                switch_pm_text=("Nothing found"),
+                switch_pm_text=("Sed Nothing found"),
                 switch_pm_parameter="",
             )
 
