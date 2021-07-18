@@ -27,8 +27,8 @@ HELP = """
 
 🎧 <b>I Can Play Music On VoiceChats 🤪</b>
 
-© Powered By 
-[ __@FILIMSMOVIE | @ALLUADDICT ]
+© MADE By 
+[ __@FILIMSMOVIE |  @ALLUADDICT ]
 """
 
 
