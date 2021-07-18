@@ -314,9 +314,9 @@ async def player(_, m: Message):
 		reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Replay", callback_data="rp"),
-					InlineKeyboardButton("Pause", callback_data="ps"),
-                    InlineKeyboardButton("Skip", callback_data="sk")
+                    InlineKeyboardButton("🔂Replay🔂", callback_data="rp"),
+					InlineKeyboardButton("⏸Pause⏸", callback_data="ps"),
+                    InlineKeyboardButton("➡️Skip➡️", callback_data="sk")
                 
                 ],
 
