@@ -99,11 +99,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("Replay", callback_data="rp"),
-                            InlineKeyboardButton("Pause", callback_data="ps")
+                            InlineKeyboardButton("🔄Replay🔄", callback_data="rp"),
+                            InlineKeyboardButton("⏸Pause⏸", callback_data="ps")
                         ],[
-                            InlineKeyboardButton("Skip", callback_data="sk"),
-                            InlineKeyboardButton("Musics", url="https://t.me/mwksongs") 
+                            InlineKeyboardButton("⏭Skip⏭", callback_data="sk"),
+                            InlineKeyboardButton("👥Group👥", url='https://t.me/filimsmovie')
                         ],
                     ]
                 )
@@ -123,11 +123,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Replay", callback_data="rp"),
-                            InlineKeyboardButton("Pause", callback_data="ps")
+                        InlineKeyboardButton("🔄Replay🔄", callback_data="rp"),
+                            InlineKeyboardButton("⏸Pause⏸", callback_data="ps")
                         ],[
-                            InlineKeyboardButton("Skip", callback_data="sk"),
-                            InlineKeyboardButton("Musics", url="https://t.me/mwksongs")
+                            InlineKeyboardButton("⏭Skip⏭", callback_data="sk"),
+                            InlineKeyboardButton('👥 Group👥', url='https://t.me/Filimsmovie')
                             
                     ],
                 ]
