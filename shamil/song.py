@@ -24,7 +24,7 @@ def a(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply('`Searching... Please Wait...`')
+    m = message.reply('`🔎Searching...🔍`')
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = []
@@ -48,28 +48,28 @@ def a(client, message):
             #     m.edit("Exceeded 30mins cap")
             #     return
 
-            performer = f"[MwK-Musics]" 
+            performer = f"[HB]" 
             thumb_name = f'thumb{message.message_id}.jpg'
             thumb = requests.get(thumbnail, allow_redirects=True)
             open(thumb_name, 'wb').write(thumb.content)
 
         except Exception as e:
             print(e)
-            m.edit('**👎 Nᴏᴛʜɪɴɢ Tᴏ Bᴇ Fᴏᴜɴᴅ 🥺 Oʀ Cʜᴇᴄᴋ Sᴩᴇʟʟɪɴɢ 🤗!**')
+            m.edit('**SED Nᴏᴛʜɪɴɢ Fᴏᴜɴᴅ 🥺  Cʜᴇᴄᴋ Sᴩᴇʟʟɪɴɢ 🤗!**')
             return
     except Exception as e:
         m.edit(
-            "**Enter Song Name with /song Command!**"
+            "**/song to Start!**"
         )
         print(str(e))
         return
-    m.edit("`Bruh... Uploading... Please Wait...`")
+    m.edit("`Uploading... Please Wait...`")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f'🎶 <b>Title:</b> <a href="{link}">{title}</a>\n⌚ <b>Duration:</b> <code>{duration}</code>\n📻 <b>Uploaded By:</b> <a href="https://t.me/mwksongs">[MwK] Musics</a>'
+        rep = f'🎶 <b>Title:</b> <a href="{link}">{title}</a>\n⌚ <b>Duration:</b> <code>{duration}</code>\n📻 <b>Uploaded By:</b> <a href="https://t.me/filimsmovie">[HB] Musics</a>'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
@@ -78,7 +78,7 @@ def a(client, message):
         m.delete()
         message.delete()
     except Exception as e:
-        m.edit('**Sᴇᴇᴍꜱ Lɪᴋᴇ Aɴ Eʀʀᴏʀ Oᴄᴄᴜʀᴇᴅ 🥶 Report This @redbullfed!!**')
+        m.edit('**Eʀʀᴏʀ  Report This @ALLUADDDICT!!**')
         print(e)
     try:
         os.remove(audio_file)
